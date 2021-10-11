@@ -1,4 +1,4 @@
-FROM uggedal/alpine
+FROM alpine:3.14.2
 MAINTAINER Rohan Singh "rohan@washington.edu"
 
 RUN apk update && apk add python
