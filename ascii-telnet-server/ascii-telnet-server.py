@@ -42,10 +42,10 @@
 
 import sys
 import time
-import SocketServer
+import socketserver as SocketServer
 import threading
 import os.path
-from StringIO import StringIO
+from io import StringIO
 from optparse import OptionParser
 
 
@@ -329,8 +329,8 @@ if __name__ == "__main__":
 	
 	if options.tcpserv:
 		if options.verbose:
-			print "Running TCP server on %s:%d" % (options.interface, options.port)
-			print "Playing movie " + options.filename
+			print("Running TCP server on %s:%d" % (options.interface, options.port))
+			print("Playing movie " + options.filename)
 		runTcpServer(options.interface, options.port, options.filename)
 	else:
 		runStdOut(options.filename)
