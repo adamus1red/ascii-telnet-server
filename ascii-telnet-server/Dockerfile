@@ -1,7 +1,5 @@
-FROM alpine:3.14.2
+FROM python:3.10.0-alpine
 MAINTAINER Rohan Singh "rohan@washington.edu"
-
-RUN apk update && apk add python
 
 ADD ascii-telnet-server.py /root/
 ADD sw1.txt /root/
